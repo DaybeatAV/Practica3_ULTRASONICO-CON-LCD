@@ -1,15 +1,15 @@
-# Practica 3 ULTRASONICO CON LCD
+# Practica 3 ULTRASÓNICO CON LCD
 En este repositorio se mostrará como programar una Tarjeta ```ESP32``` con un ```Ultrasónico``` mostrando datos en una pantalla ```LCD (I2C)```.
-## INTRODUCCION
+## INTRODUCCIÓN
 
-### DESCRIPCION
+### DESCRIPCIÓN
 
 Vamos a utilizar una tarjeta ```ESP32``` en un entorno de adquision de datos, por lo que en esta práctica utilizaremos un componente llamado ```Ultrasonico``` para obtener la distancia; Se debe anticipar que para esta practica haremos uso del simulador llamado [WOKWI](https://wokwi.com/), mismo que hemos utilizado para las prácticas anteriores.
 Además insertaremos una pantalla ```LCD (I2C)``` para monitorear los valores arrojados por el Ultrasónico cada cierto intervalo de tiempo.
 
 ## MATERIAL NECESARIO
 
-La suguiente es una lista de los componentes que se necesitarán para llevar a cabo la práctica:
+La siguiente es una lista de los componentes que se necesitarán para llevar a cabo la práctica:
 
 -[WOKWI](https://wokwi.com/)
 
@@ -92,7 +92,6 @@ void loop()
    lcd.clear();
 }
 ```
-
 
 2. El primer paso será instalar la libreria de LiquidCrystal I2C como se muestra en la siguiente imagen:
 
