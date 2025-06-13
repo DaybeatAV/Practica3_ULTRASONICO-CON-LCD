@@ -1,29 +1,29 @@
 # Practica 3 ULTRASONICO CON LCD
-ESTE REPOSITORIO MUESTRA COMO PROGRAMAR UNA ESP32 CON ULTRASONICO
+En este repositorio se mostrará como programar una Tarjeta ```ESP32``` con un ```Ultrasónico``` mostrando datos en una pantalla ```LCD (I2C)```.
 ## INTRODUCCION
 
 ### DESCRIPCION
 
-La Esp32 la utilizamos en un entorno de adquision de datos, lo cual en esta practica ocuparemos un ultrasonico para adquirir la distancia; Cabe aclarar que esta practica se usara un simulador llamado WOKWI.
-Se agregara asi mismo un LCD I2C para observar dichos datos en cada cierto tiempo
+Vamos a utilizar una tarjeta ```ESP32``` en un entorno de adquision de datos, por lo que en esta práctica utilizaremos un componente llamado ```Ultrasonico``` para obtener la distancia; Se debe anticipar que para esta practica haremos uso del simulador llamado [WOKWI](https://wokwi.com/), mismo que hemos utilizado para las prácticas anteriores.
+Además insertaremos una pantalla ```LCD (I2C)``` para monitorear los valores arrojados por el Ultrasónico cada cierto intervalo de tiempo.
 
 ## MATERIAL NECESARIO
 
-Para realizar esta practica necesitas lo siguiente:
+La suguiente es una lista de los componentes que se necesitarán para llevar a cabo la práctica:
 
 -[WOKWI](https://wokwi.com/)
 
--Tarjeta ESP 32
+- ```Tarjeta ESP32```
 
--HC-SR04 ULTRASONIC Distance sensor
+- ```HC-SR04 ULTRASONIC Distance sensor```
 
--LCD 16X2 (I2C)
+- ```LCD 16X2 (I2C)```
 
 ## INSTRUCCIONES
 
 ### Requisitos previos
 
-Para poder usar este repositorio necesitas entrar a la plataforma [WOKWI](https://wokwi.com/)
+Es necesario iniciar el software [WOKWI](https://wokwi.com/) para poder llevar a cabo esta práctica
 
 ### Instrucciones de preparación de entorno
 
@@ -67,27 +67,26 @@ void loop()
   Serial.println();
   delay(1000);          //Hacemos una pausa de 100ms
 
-  lcd.setCursor(0, 0);
-  lcd.print("   DIPLOMADO");
-  lcd.setCursor(0, 1); 
-  lcd.print(" AUTOMATIZACION");
-   delay(2000);
-  lcd.clear();
-
-   lcd.setCursor(0, 0);
-  lcd.print(" JAQUELINE R.H");
-  lcd.setCursor(0, 1); 
-  lcd.print("   INDUSTRIAL");
-   delay(2000);
-  lcd.clear();
-   lcd.setCursor(0, 0);
-  lcd.print("   07-06-2025");
+  lcd.setCursor(4, 0);
+  lcd.print("DIPLOMADO");
+  lcd.setCursor(2, 1); 
+  lcd.print("AUTOMATIZACION");
   delay(2000);
   lcd.clear();
-  
-  
-  lcd.setCursor(0, 0);
-  lcd.print("DISTANCIA: " + String(d) + "cm");
+
+  lcd.setCursor(1, 0);
+  lcd.print("JOSE DAVID A.V");
+  lcd.setCursor(4, 1); 
+  lcd.print("MECANICO");
+  delay(2000);
+  lcd.clear();
+  lcd.setCursor(3, 0);
+  lcd.print("07-06-2025");
+  delay(2000);
+  lcd.clear();
+
+  lcd.setCursor(2, 0);
+  lcd.print("Distancia: " + String(d) + "cm");
   
   delay(2000);
    lcd.clear();
@@ -95,46 +94,41 @@ void loop()
 ```
 
 
-2. Instalar la libreria de LiquidCrystal I2C como se muestra en la siguiente imagen
+2. El primer paso será instalar la libreria de LiquidCrystal I2C como se muestra en la siguiente imagen:
+
+![]()
+
+3. El siguiente paso será insertar el componente ```HC-SR04 ULTRASONIC Distance sensor``` junto a la tarjeta ```ESP32```:
 
 
 
-![](https://github.com/jaquelineriverh/PRACTICA-ESP32-CON-ULTRASONICO/blob/main/LIBRERIA%20LIQUID%20EJ3.png)
+4. Después haremos la conexion del componente ```HC-SR04 ULTRASONIC Distance sensor``` con la tarjeta ```ESP32``` tal como se ve a continuación:
+![]()
 
 
-
-4.Hacer la conexion de HC-SR04 ULTRASONIC Distance sensor
- con la ESP32 como se muestra en la siguente imagen.
-
-![](https://github.com/jaquelineriverh/PRACTICA-ESP32-CON-ULTRASONICO/blob/main/ULTRASONICO%20CONEXION.png)
+5. Por último procederemos a realizar la conexion de la pantalla ```LCD I2C``` con la tarjeta ```ESP32``` para obtener el resultado final:
 
 
-5.Hacer la conexion de LCD con la ESP32 como se muestra en la siguente imagen.
-
-
-![](https://github.com/jaquelineriverh/PRACTICA-ESP32-CON-ULTRASONICO/blob/main/ULTRASONIC%20CON%20LCD.png)
+![]()
 
 
 ### Instrucciónes de operación
-1.Iniciar simulador.
+1. El primer paso será inicializar el simulador.
 
-2.Visualizar los datos en el LCD 16x2.
+2. Después se visualizarán los datos en la pantalla ```LCD 16x2 (I2C)``` cada cierto invervalo de tiempo.
 
-3.Colocar LA DISTANCIA dando doble click al HC-SR04 ULTRASONIC Distance sensor
+3. Variar la distancia dando doble click al ```HC-SR04 ULTRASONIC Distance sensor``` para observar la distancia final en pantalla.
 
 
 ## Resultados
 
-Cuando haya funcionado, verás los valores dentro del LCD 16x2 como se muestra en la siguente imagen.
+Si la simulación opera de manera correcta se verán los valores dentro de la pantalla ```LCD 16x2 (I2C)``` como se ve en la siguiente imagen:
 
-
-![](https://github.com/jaquelineriverh/PRACTICA-ESP32-CON-ULTRASONICO/blob/main/EVIDENCIA%203%20IMAGEN.png)
+![]()
 
 ### EVIDENCIAS
 
-
-https://github.com/user-attachments/assets/e178b657-6386-4786-8853-6430b924e337
-
+https://github.com/user-attachments/assets/127a41fe-b55d-41a7-a087-176baa5df09d
 
 # Créditos
 
