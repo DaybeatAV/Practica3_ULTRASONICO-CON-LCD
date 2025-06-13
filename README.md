@@ -96,21 +96,19 @@ void loop()
 
 2. El primer paso será instalar la libreria de LiquidCrystal I2C como se muestra en la siguiente imagen:
 
-![]()
+![](https://github.com/DaybeatAV/Practica3_ULTRASONICO-CON-LCD/blob/main/Pr%C3%A1ctica%203%20Librer%C3%ADa%20LyquidCrystal%20I2C.png)
 
 3. El siguiente paso será insertar el componente ```HC-SR04 ULTRASONIC Distance sensor``` junto a la tarjeta ```ESP32```:
 
-
+![](https://github.com/DaybeatAV/Practica3_ULTRASONICO-CON-LCD/blob/main/Pr%C3%A1ctica%203%20Inserto%20de%20Ultras%C3%B3nico.png)
 
 4. Después haremos la conexion del componente ```HC-SR04 ULTRASONIC Distance sensor``` con la tarjeta ```ESP32``` tal como se ve a continuación:
-![]()
 
+![](https://github.com/DaybeatAV/Practica3_ULTRASONICO-CON-LCD/blob/main/Pr%C3%A1ctica%203%20Conexiones%20de%20Ultras%C3%B3nico.png)
 
 5. Por último procederemos a realizar la conexion de la pantalla ```LCD I2C``` con la tarjeta ```ESP32``` para obtener el resultado final:
 
-
-![]()
-
+![](https://github.com/DaybeatAV/Practica3_ULTRASONICO-CON-LCD/blob/main/Pr%C3%A1ctica%203%20Conexiones%20de%20Ultras%C3%B3nico%20y%20Pantalla%20LCD.png)
 
 ### Instrucciónes de operación
 1. El primer paso será inicializar el simulador.
@@ -119,12 +117,11 @@ void loop()
 
 3. Variar la distancia dando doble click al ```HC-SR04 ULTRASONIC Distance sensor``` para observar la distancia final en pantalla.
 
-
 ## Resultados
 
 Si la simulación opera de manera correcta se verán los valores dentro de la pantalla ```LCD 16x2 (I2C)``` como se ve en la siguiente imagen:
 
-![]()
+![](https://github.com/DaybeatAV/Practica3_ULTRASONICO-CON-LCD/blob/main/Pr%C3%A1ctica%203%20Resultado%20Final.png)
 
 ### EVIDENCIAS
 
