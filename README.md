@@ -1,4 +1,4 @@
-# Practica 3 ULTRASÓNICO CON LCD
+# Práctica 3 "ULTRASÓNICO CON LCD"
 En este repositorio se mostrará como programar una Tarjeta ```ESP32``` con un ```Ultrasónico``` mostrando datos en una pantalla ```LCD (I2C)```.
 ## INTRODUCCIÓN
 
